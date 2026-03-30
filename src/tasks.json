@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Mapear requisitos do cliente",
+    "description": "Levantar funcionalidades do sistema ágil para a startup de logística.",
+    "priority": "Alta",
+    "status": "A Fazer"
+  },
+  {
+    "id": 2,
+    "title": "Criar backlog inicial",
+    "description": "Organizar histórias de usuário e priorização por valor.",
+    "priority": "Alta",
+    "status": "Em Progresso"
+  },
+  {
+    "id": 3,
+    "title": "Implementar CRUD de tarefas",
+    "description": "Criar operações de cadastro, edição, listagem e exclusão.",
+    "priority": "Alta",
+    "status": "Concluído"
+  }
+]

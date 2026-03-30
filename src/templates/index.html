@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFlow Task Manager</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <h1>TechFlow Task Manager</h1>
+      <p>Sistema web básico para gerenciamento de tarefas com foco em fluxo ágil.</p>
+    </div>
+    <a class="button primary" href="{{ url_for('new_task') }}">Nova tarefa</a>
+  </header>
+
+  <section class="summary-grid">
+    <article class="card">
+      <h2>A Fazer</h2>
+      <p>{{ summary['A Fazer'] }}</p>
+    </article>
+    <article class="card">
+      <h2>Em Progresso</h2>
+      <p>{{ summary['Em Progresso'] }}</p>
+    </article>
+    <article class="card">
+      <h2>Concluído</h2>
+      <p>{{ summary['Concluído'] }}</p>
+    </article>
+  </section>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <section>
+        {% for category, message in messages %}
+          <div class="flash {{ category }}">{{ message }}</div>
+        {% endfor %}
+      </section>
+    {% endif %}
+  {% endwith %}
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Descrição</th>
+          <th>Prioridade</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for task in tasks %}
+          <tr>
+            <td>{{ task.id }}</td>
+            <td>{{ task.title }}</td>
+            <td>{{ task.description }}</td>
+            <td><span class="badge">{{ task.priority }}</span></td>
+            <td>{{ task.status }}</td>
+            <td class="actions">
+              <a class="button" href="{{ url_for('edit_task', task_id=task.id) }}">Editar</a>
+              <form action="{{ url_for('remove_task', task_id=task.id) }}" method="post">
+                <button class="button danger" type="submit">Excluir</button>
+              </form>
+            </td>
+          </tr>
+        {% else %}
+          <tr>
+            <td colspan="6">Nenhuma tarefa cadastrada.</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
