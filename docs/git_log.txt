@@ -1,0 +1,10 @@
+0e54a1c feat: registra mudança de escopo com filtro por prioridade
+8a95cb5 docs: adiciona diagramas UML e documentação de apoio
+b5b9243 ci: configura workflow do GitHub Actions para pytest
+2b6fc68 test: adiciona testes unitários para regras de negócio
+9fa836c feat: implementa edição e exclusão de tarefas
+bbe3fd1 feat: adiciona cadastro de tarefas com validação
+b7a7310 feat: implementa listagem de tarefas na interface
+f2303f2 feat: cria estrutura inicial da aplicação Flask
+b96558c docs: adiciona README com escopo e metodologia ágil
+fbc00ae chore: inicializa repositório e estrutura base do projeto
