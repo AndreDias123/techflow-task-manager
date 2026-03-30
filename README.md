@@ -95,6 +95,18 @@ Os diagramas UML foram incluídos na pasta `docs/`:
 Para a entrega acadêmica, inclua no documento:
 - print do quadro GitHub Projects;
 - print dos commits relevantes;
+
+## 9. Mudança de escopo
+
+Durante o desenvolvimento, foi identificada a necessidade de reforçar a visualização das tarefas mais críticas para a startup de logística. Por esse motivo, o projeto teve uma mudança de escopo controlada: além do CRUD básico de tarefas, passou a considerar com mais destaque a funcionalidade de **priorização das tarefas**.
+
+### Justificativa da mudança
+A alteração foi necessária para atender melhor ao cenário do cliente, que precisa acompanhar atividades urgentes em tempo real e tomar decisões rápidas com base na prioridade das tarefas cadastradas.
+
+### Impacto no projeto
+- atualização da documentação;
+- revisão do quadro Kanban;
+- adequação do fluxo de desenvolvimento para contemplar a priorização.
 - print do GitHub Actions com workflow executado.
 
 ## 14. Reflexão de Engenharia de Software
