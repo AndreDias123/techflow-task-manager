@@ -114,3 +114,5 @@ O projeto demonstra a aplicação integrada de requisitos, modelagem, versioname
 
 ## 15. Ajuste incremental de escopo
 A funcionalidade de filtro por prioridade foi planejada como próximo incremento do produto.
+
+- atualização desta documentação.
