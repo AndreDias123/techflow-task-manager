@@ -92,9 +92,7 @@ Os diagramas UML foram incluídos na pasta `docs/`:
 - `uml_classes.png`
 
 ## 13. Prints para o relatório final
-Para a entrega acadêmica, inclua no documento:
-- print do quadro GitHub Projects;
-- print dos commits relevantes;
+Todos os prints foram anexados dentro do arquivo PDF
 
 ## 9. Mudança de escopo
 
