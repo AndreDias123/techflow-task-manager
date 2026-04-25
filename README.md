@@ -109,6 +109,7 @@ A alteração foi necessária para atender melhor ao cenário do cliente, que pr
 
 ## 14. Reflexão de Engenharia de Software
 O projeto demonstra a aplicação integrada de requisitos, modelagem, versionamento, desenvolvimento ágil, automação de testes e gestão de mudanças, elementos centrais para a entrega de software confiável e sustentável.
+Atualização final: documentação revisada para entrega acadêmica.
 
 ## 15. Ajuste incremental de escopo
 A funcionalidade de filtro por prioridade foi planejada como próximo incremento do produto.
